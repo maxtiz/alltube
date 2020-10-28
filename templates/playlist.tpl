@@ -38,7 +38,7 @@
                    href="{path_for name="download"}?url={$entry->url}">{t}Download Video{/t}</a>
                 <a target="_blank" href="{path_for name="info"}?url={$entry->url}">{t}More options{/t}</a>
 
-                {$entry->url}
+                {path_for name="download"}?url={$entry->url}
             </div>
         {/foreach}
 
